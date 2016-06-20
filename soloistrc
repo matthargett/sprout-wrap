@@ -25,36 +25,24 @@ recipes:
 - sprout-git::projects
 - sprout-git::git_scripts
 
-# development (rails)
-- sprout-rbenv
-- sprout-ruby
-- sprout-mysql
-- sprout-postgresql
-
 # apps (editors)
 - sprout-osx-apps::textmate_preferences
-- sprout-jetbrains-editors::rubymine
+- sprout-jetbrains-editors::webstorm
+- sprout-jetbrains-editors::appcode
+- sprout-vim::default
 
 node_attributes:
   sprout:
     git:
-      domain: pivotal.io
+      domain: bluejeansnet.com
       authors:
-        - initials: ah
-          name: Abhijit Hiremagalur
-          username: abhi
-        - initials: bc
-          name: Brian Cunnie
-          username: cunnie
-        - initials: jrhb
-          name: Jonathan Barnes
-        - initials: lw
-          name: Luke Winikates
-          username: lwinikates
+        - initials: mh
+          name: Matt Hargett
+          username: matt.hargett
       projects:
         -
           name: sprout-wrap
-          url: https://github.com/pivotal-sprout/sprout-wrap.git
+          url: https://github.com/matthargett/sprout-wrap.git
     terminal:
       default_profile: 'Pro'
     settings:
@@ -82,16 +70,14 @@ node_attributes:
       - tree
       - watch
       - wget
-      - rbenv-binstubs
     casks:
-      - firefox
       - flycut
       - rowanj-gitx
       - github-desktop
       - google-chrome
+      - google-chromium
       - google-drive
       - google-hangouts
-      - macvim
       - skype
       - textmate
       - vagrant
